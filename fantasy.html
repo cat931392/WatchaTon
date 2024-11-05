@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="  https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Fantasy Anime Watchlist</title>
+    <style>
+        /* Basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-top: 1em;
+            color: #333;
+        }
+        .anime-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .anime-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+        .anime-card:hover {
+            transform: scale(1.05);
+        }
+        .anime-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .anime-info {
+            padding: 15px;
+            max-height: 80px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .anime-info h2 {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        .anime-info p {
+            color: #555;
+            font-size: 0.9em;
+            line-height: 1.2em;
+            max-height: 3.6em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        footer {
+            margin-top: 2em;
+        }
+        .navbar-brand{
+    margin-top: 0px;
+    font-family: AR DARLING;
+    display: inline-block;
+    color: lightgreen;
+}
+.dropdown-item:hover{
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <p class="navbar-brand" href="#">WatchaTon</p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AboutUs.html" >About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Genre
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="action.html" >Action</a></li>
+            <li><a class="dropdown-item" href="fantasy.html" style="background:lightgreen;">Fantasy</a></li>
+            <li><a class="dropdown-item" href="isekai.html">Isekai</a></li>
+            <li><a class="dropdown-item" href="sliceoflife.html">Slice of life</a></li>
+            <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+            <li><a class="dropdown-item" href="romance.html" >Romance</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true" style="color: lightgreen; font-family:Estrangelo Edessa;">Watch anime for free anytime you want!!</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search Anime</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<header>
+    <h1 style="color: lightgreen;">Action Anime On WatchaTon</h1>
+    <p>Explore magical realms, mythical creatures, and otherworldly adventures in these fantasy anime!</p>
+</header>
+
+<div class="container">
+
+    <!-- Fantasy Anime Section -->
+    <h2 class="section-title">Fantasy Anime</h2>
+    <section class="anime-grid">
+        <!-- Anime 1 -->
+        <a href="https://9animetv.to/watch/fatezero-177?ep=4323" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTITSmNU74JO3a1FkIXHyV67RXwEGClcnenQA&s" alt="Fate/Zero">
+            </div>
+            <div class="anime-info">
+                <h2>Fate/Zero</h2>
+                <p>Mages summon legendary heroes to battle in a war for the Holy Grail, a wish-granting artifact.</p>
+            </div>
+        </a>
+
+        <!-- Anime 2 -->
+        <a href="https://9animetv.to/watch/made-in-abyss-32?ep=948" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrItSOp2jUQNZohuxe95eEUFsBgs5y7CtUrA&s" alt="Made in Abyss">
+            </div>
+            <div class="anime-info">
+                <h2>Made in Abyss</h2>
+                <p>A young girl and a robot boy venture into a mysterious abyss in search of her mother.</p>
+            </div>
+        </a>
+
+        <!-- Anime 3 -->
+        <a href="https://9animetv.to/watch/the-seven-deadly-sins-561?ep=10966" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH-KgP8c-Cm7bD5LDfLFDuGqpnrYThgqSotw&s" alt="The Seven Deadly Sins">
+            </div>
+            <div class="anime-info">
+                <h2>The Seven Deadly Sins</h2>
+                <p>A princess seeks out a group of powerful knights to save her kingdom from tyranny.</p>
+            </div>
+        </a>
+
+        <!-- Anime 4 -->
+        <a href="https://9animetv.to/watch/rezero-starting-life-in-another-world-212?ep=4813" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTY1M2NjMTItOGFhNi00NDU3LWExNzQtZGY2YWJlYzExNmU3XkEyXkFqcGc@._V1_.jpg " alt="Re:Zero - Starting Life in Another World">
+            </div>
+            <div class="anime-info">
+                <h2>Re:Zero - Starting Life in Another World</h2>
+                <p>A boy finds himself in a fantasy world with the power to return from death, but at a cost.</p>
+            </div>
+        </a>
+
+        <!-- Anime 5 -->
+        <a href="https://9animetv.to/watch/magi-the-kingdom-of-magic-208?ep=4759" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNgPcRppNE6TCpWtYceaCsD821BuU2TN1yug&s" alt="Magi: The Labyrinth of Magic">
+            </div>
+            <div class="anime-info">
+                <h2>Magi: The Labyrinth of Magic</h2>
+                <p>A boy with mystical powers embarks on an adventure to discover his destiny.</p>
+            </div>
+        </a>
+
+        <!-- Anime 6 -->
+        <a href="https://9animetv.to/watch/tower-of-god-866?ep=15024" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXSovFEjz9dvDpNLCujb1cXVDhCk54EsT_0sff3bPJTcb3ITuTEztjI3oQeeldtozIjqK2nGmR9g7RujP-JiIeKkHpyjadSVNID6zFu7Y   " alt="Tower of God">
+            </div>
+            <div class="anime-info">
+                <h2>Tower of God</h2>
+                <p>A boy climbs a mysterious tower to find a friend, encountering powerful allies and foes.</p>
+            </div>
+        </a>
+
+        <!-- Anime 7 -->
+        <a href="https://9animetv.to/watch/the-rising-of-the-shield-hero-524?ep=10509" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://m.media-amazon.com/images/M/MV5BZjc4ZGZkNjMtZTRkYS00Mjk4LTgwMzAtMzg1MWZlZjcxNDRhXkEyXkFqcGc@._V1_.jpg" alt="The Rising of the Shield Hero">
+            </div>
+            <div class="anime-info">
+                <h2>The Rising of the Shield Hero</h2>
+                <p>A man summoned to a fantasy world must defend it as the legendary Shield Hero.</p>
+            </div>
+        </a>
+
+        <!-- Anime 8 -->
+        <a href="https://9animetv.to/watch/konosuba-gods-blessing-on-this-wonderful-world-legend-of-crimson-78?ep=58226" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAao4neLFIZy65Hf8_UoD6nSoY0lK_AHov1w&s" alt="KonoSuba: God's Blessing on This Wonderful World!">
+            </div>
+            <div class="anime-info">
+                <h2>KonoSuba</h2>
+                <p>A boy is reincarnated in a fantasy world with a group of quirky adventurers.</p>
+            </div>
+        </a>
+
+        <!-- Anime 9 -->
+        <a href="https://9animetv.to/watch/no-game-no-life-261?ep=5328" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRydLRm32CBu67EAMTHsK-mUXR9yOs7AgEWUg&s" alt="No Game No Life">
+            </div>
+            <div class="anime-info">
+                <h2>No Game No Life</h2>
+                <p>Siblings transported to a fantasy world must win games to rule over different races.</p>
+            </div>
+        </a>
+
+        <!-- Anime 10 -->
+        <a href="https://9animetv.to/watch/sword-art-online-2274?ep=26565" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://m.media-amazon.com/images/M/MV5BN2NhYzU2NDEtYzI1NS00MjgzLThjZGUtOTYxNGJkZjZmNDdjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Sword Art Online">
+            </div>
+            <div class="anime-info">
+                <h2>Sword Art Online</h2>
+                <p>Players trapped in a virtual reality MMORPG must clear all levels to escape.</p>
+            </div>
+        </a>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Anime Watchlist | Created by Jestoni Catig</p>
+</footer>
+ <script src="   https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

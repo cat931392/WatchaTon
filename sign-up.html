@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<title>Sign Up</title>
+</head>
+<body>
+  <div class="container2" id="sign-up">
+    <h1 class="form-title" style="color: lightgreen;">Sign Up on WatchaTon</h1>
+    <form method="post" action=""></form>
+    <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="Fname" id="Fname" placeholder=" Enter First Name" required>
+        <label for="Fname">First Name</label>
+    </div>
+     <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="Lname" id="Lname" placeholder=" Enter Last Name" required>
+        <label for="Lname">Last Name</label>
+    </div>
+     <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" id="email" placeholder="Enter email" required>
+        <label for="email">Email</label>
+    </div>
+     <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="PassWord" id="PassWord" placeholder="Password" required>
+        <label for="PassWord">Password</label>
+    </div>
+    <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="PassWord" id="Re Enter-PassWord" placeholder="Re Enter-PassWord" required>
+        <label for="Re Enter-PassWord">Re Enter-PassWord</label>
+    </div>
+     <div class="input-group">
+       
+       
+       <a href="home.html"><input type="Submit" name="Submit" class="btn" value="Sign-in" name="Sign-in" ></a> 
+        
+        
+    </div>
+    <div class="icons">
+        <p class="or">----------or----------</p>
+
+        
+    </div>
+    <div class="icons">
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+    </div>
+    <div class="links">
+        <p> Already Have an Account ?</p>   
+       <a href="login.html"><button class="button">Sign in</button></a>
+
+   
+</div>
+     <!-- style -->
+     <style> 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poopins sans-serif;
+
+}
+body{
+    background-color: lightgreen;
+    background: linear-gradient(to right,yellow green,lightblue,lightgreen);
+
+}
+
+.container2{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1M972R29OlSGggKJ-SJyxgJw2GLOpuj6gqA&s);
+    background-size: cover;
+    width: 500px;
+    padding: 2rem;
+    margin: 50px;
+    border-radius: 10px;
+ 	   box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+}
+form{margin: 0 2rem;}
+
+.form-title{
+	font-size: 1.5 rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 1.5rem;
+	margin-bottom: 0.4rem;
+}
+input{
+	color: lightgreen;
+	width: 100%;
+	background-color: transparent;
+	border:none;
+	border-bottom: 1px solid #757575;
+	padding-left: 1.5rem;
+	font-size: 1.5rem;
+}
+.input-group{
+	padding: 1% 0;
+	position: relative;
+
+
+}
+.input-groupo i {
+	position: absolute;
+	color: black;
+}
+input:focus{
+	background-color: transparent;
+	outline: transparent;
+	border-bottom: 2px solid hsl(327, 90%, 28%,);
+}
+input::placeholder{
+	color: transparent;
+
+}
+label{
+	color: #757575;
+	position: relative;
+	left: 1.2em;
+	top: 1.3em;
+	cursor: auto;
+
+}
+input:focus~label,input:not(placeholder~shown)label{
+	top: -3em;
+	color: hsl(327, 90%, 28%, );
+	font-size: 15px;
+
+}
+.btn{
+	margin-top: 50px;
+	font-size: 1.1rem;
+	padding: 8px;
+	border-radius: 10px;
+	outline: none;
+	border:none;
+	width: 100%;
+	background: lightgreen;
+	color: white;
+	cursor: pointer;
+	transition: 0.9s;
+
+}
+.btn:hover{
+	background: darkgreen;
+}
+.or{
+	font-size: 1.1rem;
+	margin-top: 0.5rem;
+	text-align: center;
+	
+}
+.icons{
+	text-align: center;
+
+}
+.icons i{
+	color:lightgreen;
+	 padding: 0.8rem 1.5rem;
+	 border-radius: 10px;
+	 font-size: 1.5rem;
+	 cursor: pointer;
+	 border: 2px solid #dfe9f5;
+	 margin: 0 15px	;
+	 transition: 1s;
+}
+.icons i:hover{
+	background: darkgreen;
+	font-size: 1.6rem ;
+	border: 2px solid lightgreen;
+}
+.links{
+	display: flex;
+	justify-content: space-around;
+	padding: 0 4rem;
+	margin-top: 0.9rem;
+	font-weight: bold;
+}
+.button{
+	color: lightgreen;
+	border: none;
+	background-color: transparent;
+	font-size: 1rem;
+	font-weight: bold;
+
+
+}
+.button:hover{
+	text-decoration: underline;
+	color: darkgreen;
+
+
+}
+
+
+
+</body>
+</html>

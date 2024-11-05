@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="  https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Anime Watchlist - Action, Romance, Fantasy & Isekai</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .dropdown-item:hover{
+            background: lightgreen;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-top: 1em;
+            color: #333;
+        }
+        .anime-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .anime-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-decoration: none; /* Remove underline for links */
+            color: inherit; /* Inherit text color */
+        }
+        .anime-card:hover {
+            transform: scale(1.05);
+        }
+        .anime-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .anime-info {
+            padding: 15px;
+            max-height: 80px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .anime-info h2 {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        .anime-info p {
+            color: #555;
+            font-size: 0.9em;
+            line-height: 1.2em;
+            max-height: 3.6em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .navbar-brand{
+    margin-top: 0px;
+    font-family: AR DARLING;
+    display: inline-block;
+    color: lightgreen;
+}
+        footer {
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <p class="navbar-brand" href="#">WatchaTon</p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AboutUs.html" >About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Genre
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="action.html"  style="background:lightgreen;">Action</a></li>
+            <li><a class="dropdown-item" href="fantasy.html">Fantasy</a></li>
+            <li><a class="dropdown-item" href="isekai.html">Isekai</a></li>
+            <li><a class="dropdown-item" href="sliceoflife.html">Slice of life</a></li>
+            <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+            <li><a class="dropdown-item" href="romance.html" >Romance</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true" style="color: lightgreen; font-family:Estrangelo Edessa;">Watch anime for free anytime you want!!</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search Anime</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<header>
+    <h1 style="color: lightgreen;">Action Anime On WatchaTon</h1>
+    <p>Your go-to list for high-energy action</p>
+</header>
+
+<div class="container">
+
+    <!-- Action Anime Section -->
+    <h2 class="section-title">Action Anime</h2>
+    <section class="anime-grid">
+        <!-- Anime 1 -->
+        <a href="https://9animetv.to/watch/attack-on-titan-112?ep=3303" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://static.wikia.nocookie.net/shingekinokyojin/images/d/d8/Attack_on_Titan_Season_1.jpg/revision/latest?cb=20211005182832 alt="Attack on Titan">
+            </div>
+            <div class="anime-info">
+                <h2>Attack on Titan</h2>
+                <p>Humanity fights for survival against giant humanoid creatures known as Titans.</p>
+            </div>
+        </a>
+
+        <!-- Anime 2 -->
+        <a href="https://9animetv.to/watch/my-hero-academia-2-131?ep=3834" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN0-vYUIp8QOdASNtzskHJcFjHlbkQ3r2OoGMsArlqL_rFLMN8DYE6BVw9X2TIceN5ibzxXns263FOlWr8bTJjQmh4MBGIW1IhVUWglw" alt="My Hero Academia">
+            </div>
+            <div class="anime-info">
+                <h2>My Hero Academia 2</h2>
+                <p>In a world where superpowers exist, a boy without them strives to become a hero.</p>
+            </div>
+        </a>
+
+        <!-- Anime 3 -->
+        <a href="https://9animetv.to/watch/demon-slayer-kimetsu-no-yaiba-47?ep=1279" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://m.media-amazon.com/images/M/MV5BMWU1OGEwNmQtNGM3MS00YTYyLThmYmMtN2FjYzQzNzNmNTE0XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" alt="Demon Slayer">
+            </div>
+            <div class="anime-info">
+                <h2>Demon Slayer</h2>
+                <p>A boy becomes a demon slayer to avenge his family and save his sister from a demon curse.</p>
+            </div>
+        </a>
+
+        <!-- Anime 4 -->
+        <a href=" https://9animetv.to/watch/fullmetal-alchemist-brotherhood-1?ep=1" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr_cmzkkrXOT0VCkmvSSvRP2tJ5pPRIAgI2Q&s">
+            </div>
+            <div class="anime-info">
+                <h2>Fullmetal Alchemist: Brotherhood</h2>
+                <p>Two brothers use alchemy in their quest to find the Philosopher's Stone and restore their bodies.</p>
+            </div>
+        </a>
+
+        <!-- Anime 5 -->
+        <a href="https://9animetv.to/watch/one-piece-100?ep=2142" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoiiSW10UWaAn-kyQlcxZZUSdIRmNIsnnHv8LGbSE_3f_tx74lNFuqoyEikgX2JS4CH4&usqp=CAU" alt="One Piece">
+            </div>
+            <div class="anime-info">
+                <h2>One Piece</h2>
+                <p>A young pirate sets out on a quest to find the legendary One Piece treasure and become the Pirate King.</p>
+            </div>
+        </a>
+
+        <!-- Anime 6 -->
+        <a href="https://9animetv.to/watch/jojos-bizarre-adventure-17864?ep=72036" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDntWuCpdzJ5OS9OV6UAZbwaKPWzHlh1qMKg&s" alt="JoJo's Bizarre Adventure">
+            </div>
+            <div class="anime-info">
+                <h2>JoJo's Bizarre Adventure</h2>
+                <p>A multi-generational saga of the Joestar family, filled with supernatural battles and unique powers.</p>
+            </div>
+        </a>
+
+        <!-- Anime 7 -->
+        <a href="   https://9animetv.to/watch/one-punch-man-63?ep=1501" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQOzYITDzw8WTwQjygbtTEE1FxaSlrd7g2kA&s" alt="One Punch Man">
+            </div>
+            <div class="anime-info">
+                <h2>One Punch Man</h2>
+                <p>A hero for fun becomes bored with his overwhelming strength and seeks a worthy opponent.</p>
+            </div>
+        </a>
+
+        <!-- Anime 8 -->
+        <a href="https://9animetv.to/watch/black-clover-2404?ep=27377" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE8RP34r8JfVyaxsqiQBnj08vS0b0yPBrZmA&s" alt="Black Clover">
+            </div>
+            <div class="anime-info">
+                <h2>Black Clover</h2>
+                <p>In a world of magic, a boy without powers strives to become the Wizard King.</p>
+            </div>
+        </a>
+
+        <!-- Anime 9 -->
+        <a href="https://9animetv.to/watch/haikyu-76?ep=1626" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0qorGZ9LFlDS2sVYezd1D2j0Jcdpbot_ojg&s" alt="Haikyuu!!">
+            </div>
+            <div class="anime-info">
+                <h2>Haikyuu!!</h2>
+                <p>A high school volleyball team aims for the championship while overcoming personal challenges.</p>
+            </div>
+        </a>
+
+        <!-- Anime 10 -->
+        <a href="https://9animetv.to/watch/attack-on-titan-the-final-season-part-3-18329?ep=99029" class="anime-card" target="_blank">
+            <div class="anime-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqCZ-mWMYdPPvPfOFMkypaCpo9QiirjLMWJA&s
+                " alt="Attack on Titan Final">
+            </div>
+            <div class="anime-info">
+                <h2>Attack on Titan final Part-3</h2>
+                <p>Humanity fights for survival against giant humanoid creatures known as Titans.</p>
+            </div>
+        </a>
+    </section>
+     <script src="   https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
